@@ -484,6 +484,18 @@ input:focus, select:focus, button:focus {
 
 .nav__cta {
   display: none;
+  /* Botón del nav refinado: sin el glow exagerado, más compacto */
+  background: var(--color-accent);
+  box-shadow: none;
+  padding: 11px 22px;
+  font-size: var(--fs-sm);
+  border-radius: var(--radius-full);
+}
+
+.nav__cta:hover {
+  background: #0c8fe0;
+  box-shadow: 0 4px 14px rgba(15, 166, 254, 0.3);
+  transform: translateY(-1px);
 }
 
 @media (min-width: 768px) {
